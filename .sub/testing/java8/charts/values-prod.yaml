@@ -7,3 +7,16 @@ configServer:
   configLabel: prod
   profilesActive: "prod,it"
   configUri: "http://subatomic-config-server.test-1-testing-shared-prod.svc"
+
+livenessProbe:
+  path: /actuator/infowrong
+  initialDelaySeconds: 60
+  periodSeconds: 10
+  successThreshold: 1
+  timeoutSeconds: 1
+readinessProbe:
+  path: /actuator/healthwrong
+  failureThreshold: 1
+  periodSeconds: 10
+  successThreshold: 1
+  timeoutSeconds: 1
