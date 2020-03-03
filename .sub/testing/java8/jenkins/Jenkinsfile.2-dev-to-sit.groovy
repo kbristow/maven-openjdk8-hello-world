@@ -76,9 +76,7 @@ def deploy(environment, imageTag, cluster) {
     }
 
     // If the first installation fails, wipe it. This is a limitation of Helm https://github.com/helm/helm/issues/3353
-    sh "if helm history --max 1 ${subatomicAppName} 2>/dev/null | grep FAILED | cut -f1 | grep -q 1; then
-            helm delete --purge ${subatomicAppName}
-        fi"
+    sh "if helm history --max 1 ${subatomicAppName} 2>/dev/null | grep FAILED | cut -f1 | grep -q 1; then helm delete --purge ${subatomicAppName}; fi"
 
     sh "helm upgrade --install ${subatomicAppName} ${subatomicHomeFolder}/charts \
            --atomic \
