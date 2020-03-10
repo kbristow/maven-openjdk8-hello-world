@@ -1,0 +1,4 @@
+name: java8
+description: Subatomic helm chart for java8 applications
+apiVersion: v1
+version: 0.1.1
