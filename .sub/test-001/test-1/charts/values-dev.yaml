@@ -7,3 +7,6 @@ configServer:
   configLabel: master
   profilesActive: "dev,it"
   configUri: "http://subatomic-config-server.kieran-test-test-001-shared.svc"
+
+ingress:
+  gslb: test-1.test-001-dev.subatomic-test-uat.nonprod.caas.absa.co.za
