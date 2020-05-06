@@ -7,7 +7,7 @@ languagePack = "java8"
 
 kubeconfigDir = "/kubeconfigs"
 
-subatomicTeamName = "kieran-4"
+subatomicTeamName = "kieran-2"
 subatomicProjectName = "upgrade-1"
 subatomicAppName = "maven-test"
 subatomicHomeFolder = ".sub/${subatomicProjectName}/${subatomicAppName}"

@@ -27,7 +27,7 @@ nonprodClusters = [
     ]
 ]
 
-nonprodEnvironments = ["dev", "sit"]
+nonprodEnvironments = ["uat"]
 
 prodClusters = [
     [
@@ -42,7 +42,7 @@ prodClusters = [
     ]
 ]
 
-prodEnvironments = []
+prodEnvironments = ["prod"]
 
 selectTagFromEnvironment = true
 
