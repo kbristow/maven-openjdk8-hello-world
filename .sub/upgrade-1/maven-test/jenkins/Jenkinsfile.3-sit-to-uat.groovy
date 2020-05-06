@@ -27,7 +27,7 @@ nonprodClusters = [
     ]
 ]
 
-nonprodEnvironments = ["dev", "sit"]
+nonprodEnvironments = ["sit", "uat"]
 
 prodClusters = [
     [

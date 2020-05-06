@@ -6,4 +6,4 @@ replicaCount: 2
 configServer:
   configLabel: master
   profilesActive: "dev,it"
-  configUri: "http://subatomic-config-server.kieran-4-upgrade-1-shared.svc"
+  configUri: "http://subatomic-config-server.kieran-2-upgrade-1-shared.svc"
