@@ -1,0 +1,9 @@
+{{- if .Values.image.tag}}
+Your image tag is {{ .Values.image.tag}}
+{{- end }}
+
+{{- if .Values.ingress}}
+  {{- if .Values.ingress.fqdn }}
+You can use http://{{ .Values.ingress.fqdn }} to access your application
+  {{- end }}
+{{- end }}
