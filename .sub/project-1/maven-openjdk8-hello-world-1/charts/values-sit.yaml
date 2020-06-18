@@ -1,9 +1,0 @@
-# Default values for a java8 app sit environment.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
-replicaCount: 2
-
-configServer:
-  configLabel: sit
-  profilesActive: "sit,it"
-  configUri: "http://subatomic-config-server.kieran-test-2-project-1-shared.svc"
